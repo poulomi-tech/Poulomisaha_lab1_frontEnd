@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container {
+            justify-content: center;
+            border: 2px solid whitesmoke;
+            align-items: center;
+            display: block;
+            width : 350px;
+            height: 250px;
+            margin: auto;
+            margin-top: 20vh;
+            
+        }
+        .content1{
+            padding: 4px;
+            color: slategray;
+            font-size: 15px;
+            font-family: sans-serif;
+            height: 30px;
+
+
+        }
+
+        .content2{
+            padding: 4px;
+            color: slategray;
+            font-size: 15px;
+            font-family: sans-serif;
+            
+        }
+        button {
+            background-color: purple;
+            color: aliceblue;
+            margin-bottom: 10px;
+            margin-left: 60px;
+            margin-top: 10px;
+            width: 65px;
+            height: 30px;
+        }
+        #Heading{
+            margin-top: 10px;
+            margin-left: 40px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        input {
+            background-color: whitesmoke;
+            color: slategray;
+            border: none;
+            width: 20em;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+        #emailaddress{
+            background-color: slategray;
+            color:antiquewhite;
+        }
+        .backvideo{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: .85;
+
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            
+        }
+    </style>
+</head>
+<body>
+     <div class="main">
+    <video autoplay muted loop plays-inline class="backvideo">
+        <source src="Background_Video.mp4.mp4">
+    </video>
+    
+    <div class="container">
+
+
+    
+       <div id="Heading">Create Gmail Account</div>
+       <div class="content1">
+        <input type="text" placeholder="Full name">
+        
+     </div>
+       <div class="content1">
+       <input type="number" min="1111111111" max="9999999999" placeholder="Contact Number">
+     </div>
+     <div class="content2">
+        <input id="emailaddress" type="email" name="email" placeholder="Enter mail id">
+     </div>
+     <div>
+        <button>Reset</button>
+        <button>Submit</button>
+     </div>
+    </div>
+     </div>
+</body>
+</html>
